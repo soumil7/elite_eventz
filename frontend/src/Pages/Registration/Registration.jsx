@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './Registration.css'; // Optional: For custom styling
+import RegistrationComponent from '../../Components/RegistrationComponent/RegsitrationComponent';
+// import RegistrationComponent from '../../Components/RegistrationComponent/RegsitrationComponent';
 
 const Registration = () => {
     const [formData, setFormData] = useState({
@@ -53,6 +55,9 @@ const Registration = () => {
     return (
         <>
         <div className="top"></div>
+        <RegistrationComponent></RegistrationComponent>
+        <div className='or'>OR</div>
+        {/* <RegistrationComponent/> */}
         <div className="registration-form">
             <h2>Event Registration</h2>
             <form onSubmit={handleSubmit}>

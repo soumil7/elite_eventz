@@ -1,6 +1,10 @@
 .top{
     margin-top: 30px;
 }
+.or{
+    text-align: center;
+    padding-bottom: 20px;
+}
 .registration-form {
     max-width: 600px;
     margin: auto;

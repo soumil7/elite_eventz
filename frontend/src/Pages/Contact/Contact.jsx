@@ -1,5 +1,6 @@
 import React from 'react';
 import './Contact.css'; // Ensure this file exists for styling
+import RegistrationComponent from '../../Components/RegistrationComponent/RegsitrationComponent';
 
 const Contact = () => {
     return (
@@ -44,6 +45,7 @@ const Contact = () => {
                     <li><strong>Event Consulting:</strong> Strategic advice and planning to ensure event success.</li>
                 </ul>
             </section>
+            <RegistrationComponent></RegistrationComponent>
         </div>
     );
 };

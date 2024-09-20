@@ -56,9 +56,9 @@ const Registration = () => {
         <>
         <div className="top"></div>
         <RegistrationComponent></RegistrationComponent>
-        <div className='or'>OR</div>
+        {/* <div className='or'>OR</div> */}
         {/* <RegistrationComponent/> */}
-        <div className="registration-form">
+        {/* <div className="registration-form">
             <h2>Event Registration</h2>
             <form onSubmit={handleSubmit}>
                 <label>
@@ -130,7 +130,7 @@ const Registration = () => {
                     {loading ? 'Registering...' : 'Register'}
                 </button>
             </form>
-        </div>
+        </div> */}
         </>
     );
 };

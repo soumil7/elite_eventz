@@ -1,52 +1,61 @@
+/* Container for the event cards */
 .events-offered {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Default is 1 card per row */
+  gap: 20px;
   padding: 20px;
 }
 
+/* Event card styling */
 .event-card {
   position: relative;
-  flex: 1 0 30%; /* Four cards per row with some spacing */
-  box-sizing: border-box;
-  margin: 10px;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+  transition: transform 0.2s ease;
 }
 
+/* Card hover effect */
 .event-card:hover {
   transform: scale(1.05);
 }
 
+/* Image styles */
 .event-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 200px; /* Set a fixed height for images */
+  object-fit: cover; /* Ensures image covers the card without stretching */
 }
 
-/* For placing the text over the image */
+/* Caption and description styling */
 .event-caption,
 .event-description {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   padding: 10px;
-  color: white;
-  background: rgba(0, 0, 0, 0.6); /* semi-transparent background */
 }
 
 .event-caption {
   font-size: 1.2em;
   font-weight: bold;
-  top: 0; /* Moves the caption to the top of the card */
-  background: rgba(0, 0, 0, 0.7); /* Slightly darker background for the title */
 }
 
 .event-description {
   font-size: 0.9em;
-  color: #f1f1f1;
+  color: #555;
+}
+
+/* Responsive Styles */
+
+/* For tablets (768px and up) - 2 cards per row */
+@media (min-width: 768px) {
+  .events-offered {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+}
+
+/* For laptops (1024px and up) - 3 cards per row */
+@media (min-width: 1024px) {
+  .events-offered {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  }
 }

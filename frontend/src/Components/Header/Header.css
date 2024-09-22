@@ -42,6 +42,7 @@
 
 @media (max-width:1050px) {
     .header-contents{
+        display: none !important;
         max-width: 45%;
     }
 }

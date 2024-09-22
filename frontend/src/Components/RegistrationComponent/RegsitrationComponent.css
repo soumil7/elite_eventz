@@ -1,42 +1,98 @@
 .container {
-    padding: 20px;
-    text-align: center;
-    background-color: #f4f4f4;
-    max-width: 600px;
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .container h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 15px;
-  }
-  
-  .container p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  button:focus {
-    outline: none;
-  }
+  padding: 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-  
+.container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.container p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.registration-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.registration-button:hover {
+  background-color: #45a049;
+}
+
+.registration-button:focus {
+  outline: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 320px) {
+  .container {
+    padding: 10px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  h2 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 475px) {
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 26px;
+  }
+  p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 80%; /* More space on larger screens */
+  }
+  h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .container {
+    max-width: 75%; /* Further adjustment for larger laptops */
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
